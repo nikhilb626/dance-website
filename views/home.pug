@@ -1,0 +1,74 @@
+extends base.pug
+
+block scripts
+    script(src='../static/index.js')
+    script(src='https://kit.fontawesome.com/7d994d7d71.js', crossorigin='anonymous')
+
+
+block style 
+    style 
+        include ../static/style.css
+    style
+        include ../static/respon1.css
+
+block navbar
+    nav#navbar
+        ul 
+            div#logo
+                img(src=" ../static/vectorr/1.png")
+                |NDA
+            li #[a(href='/') HOME]
+            li #[a(href='/about') ABOUT]
+            //- li #[a(href='/') SERVICES]
+            li #[a(href='/class') CLASS INFO]
+            li #[a(href='/contact') CONTACT US]
+
+block content
+    
+    section#introSection
+        div.para Welcome To Nikhil's Dance Academy
+        div#small.para 
+            h3 Eat sleep dance repeat
+    section#missionSection
+        div#mission
+            h3 Our mission
+            div.card
+                h2 Dance perfection 
+                div.card-box
+                    div.card-img
+                        img(src="../static/vectorr/2.png")
+                    
+                    div.card-content
+                        p This is the best Dance academy of the universe
+            div.card
+                h2 Dance the way you like
+                div.card-box
+                    div.card-img
+                        img(src="../static/vectorr/3.png")
+                    
+                    div.card-content
+                        p This is the best Dance academy of the universe
+            div.card
+                h2 expert teaching 
+                div.card-box
+                    div.card-img#third
+                        img(src="../static/vectorr/4.png")
+                    
+                    div.card-content
+                        p This is the best Dance academy of the universe
+    section#sponsorSection
+        h3 Our Sponsors 
+        div#sponsors
+            div.spone#spone1
+                img(src="../static/b.png" ,alt="sponsor image",class="spImage")
+            div.spone#spone2
+                img(src="../static/c.png" ,alt="sponsor image",class="spImage")
+            div.spone#spone3
+                img(src="../static/d.png" ,alt="sponsor image",class="spImage")
+            div.spone#spone4
+                img(src="../static/e.png" ,alt="sponsor image",class="spImage")
+
+block foot
+    footer#footer 
+        |copyright © 2021 NikhilDanceAcademy.com  all rights|reserved
+

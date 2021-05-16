@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+
+
+.container{
+    height: auto;
+    background: #111;
+    top: 0;
+
+}
+
+
+.container h1{
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+
+}
+
+.container .myform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    
+}
+
+
+.myform .myinput{
+    width: 60%;
+    height: 70px;
+    margin: 23px 5px;
+    padding: 30px 20px;
+    font-size: 18px;
+    color: white;
+    background: rgba(255,255,255,0.2);
+    border:none;
+    outline: none;
+    border-radius: 10px;
+    transition: all 0.5s;
+
+
+    
+
+
+}
+
+
+
+.myform .myinput:hover,.myform .myinput:active{
+    border-left:8px solid #4285f4;
+    border-right:8px solid #4285f4;
+
+    box-shadow: 0 0 100px rgba(66,133,244,0.6);
+
+}
+
+
+.myform .btn:hover{
+    border-left: solid 8px rgba(255,255,255,0.5);
+    border-right: solid 8px rgba(255,255,255,0.5);
+    box-shadow: 0 0 100px rgba(66,133,244,0.8);
+    background: blue;
+    color: white;
+    font-weight: bold;
+
+}
+
+::placeholder{
+    color: rgb(168, 167, 167);
+}
+
+.myform .btn{
+    width: 20%;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: all 0.5s;
+
+}
+
+
+@media (max-width:700px) and (min-width: 500px){
+    .container{
+        height:58vh;
+    }
+
+}
+
+@media (max-width: 500px){
+    .myform .myinput{
+        width: 85%;
+    }
+}

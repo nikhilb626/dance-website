@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+
+
+.container{
+    background: linear-gradient(#000428,#004e92);
+    height: 76vh;
+    display: flex;
+    
+}
+
+
+.inner-container1{
+    width: 50%;
+   padding: 50px 20px;
+}
+
+.inner-container2{
+    padding: 100PX 100PX;
+    width: 50%;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 2px;
+    font-size: 19px;
+    color:white;
+}
+
+
+
+.inner-container2 .item{
+    display: flex;
+    margin: 20px 20px;
+}
+
+
+
+table{
+    width: 650px;
+    height: 350px;
+    margin: auto;
+    text-align: center;
+    table-layout:fixed;
+}
+
+
+table,tr,th,td{
+    padding: 20px;
+    color: white;
+    border: 1px solid #080808;
+    border-collapse: collapse;
+    font-size: 16px;
+    font-family: arial;
+    background: linear-gradient(top,#d37c0b 0%,#9e4e03 100%);
+    background: -webkit-linear-gradient(top,#d37c0b 0%,#9e4e03 100%);
+    transition: all 0.5s;
+
+}
+
+td:hover{
+    background: orange;
+
+}
+
+.inner-container2 .item i{
+    margin-right: 30px;
+}
+
+
+@media (max-width: 1195px){
+    .container{
+        display:flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    
+    }
+
+    .inner-container1{
+        width: 100%;
+    }
+
+    table{
+        width: 80%;
+        height: 450px;
+    }
+
+    .inner-container2{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+}
+
+@media (max-width:954px) and (min-width:639px){
+    table,tr,th,td{
+        font-size: 14px;
+    }
+    table{
+        width: 95%;
+    }
+}
+
+@media (max-width: 639px){
+    .inner-container2{
+        font-size: 11px;
+    }
+
+
+    .inner-container1{
+        padding: 50px 0px;
+    }
+    table,tr,td{
+        font-size: 8px;
+    }
+    table{
+        width: 100%;
+    }
+
+    th{
+        font-size:9px;
+        font-weight: 1000;
+    }
+    
+
+   
+
+    
+}

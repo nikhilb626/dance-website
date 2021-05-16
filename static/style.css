@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    height: auto;
+}
+#logo{
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: 0 14px;
+    padding: 1px 4px;
+    margin-right: 250px;
+}
+#logo img{
+    height: 44px;
+    filter: invert(1);
+}
+#logo:hover{
+    font-weight: bold;
+
+    color:rgb(255, 255, 255);
+    background: rgb(95, 95, 95);
+    box-shadow: 0 0 10px black;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#navbar li{
+    list-style: none;
+    line-height: 50px;
+}
+#navbar li a{
+    text-decoration: none;
+    padding: 25px 50px;
+    color: white;
+    font-size: 20px;
+    transition: all .5s;
+}
+
+
+#navbar a:hover{
+    font-weight: bold;
+
+    color:rgb(255, 255, 255);
+    background:  #0f0f0f;
+    box-shadow: 0 0 10px black;
+
+}
+
+
+
+
+
+#navbar{
+    background-color: #353535;
+    padding: 13px 14px;
+    font-family:'Itim';
+    box-sizing: border-box;
+
+}
+
+#introSection{
+    transition: all .5s;
+    font-family: "Russo One";
+    display: flex;
+    flex-direction: column;
+    background: center/cover no-repeat url("/static/bg-min.jpg");
+    color: white;
+    /* opacity: 0.8; */
+    height: 600px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    padding-bottom: 160px;
+    filter: hue-rotate(204deg);
+
+}
+
+
+
+#small{
+    font-size: 30px;
+    padding: 4px;
+    animation:type 3s steps(20) infinite;
+    overflow:hidden;
+    white-space:nowrap;
+    border-right:4px solid black;
+    width: 20ch;
+
+}
+
+@keyframes type{
+    0%{
+        width:0ch;
+    }
+    100%{
+        width:22ch;
+    }
+}
+
+
+
+#mission{
+    width: 90%;
+    margin: 0px auto;
+}
+
+#introSection:hover{
+    filter: hue-rotate(180deg);
+}
+
+#introSection .para{
+    transition: all .5s;
+    filter: blur(2px);
+
+}
+
+#introSection:hover .para{
+    filter: blur(0px);
+}
+
+
+
+
+
+
+
+#missionSection{
+    background: #abbaab;
+    height: 400px;
+}
+
+
+#missionSection h3{
+    font-family:'Itim';
+    text-align: center;
+    padding-top: 23px;
+    font-size: 34px;
+    text-shadow: 0 0 10px white;
+
+}
+
+.card{
+    display: inline-block;
+    border-radius: 5px;
+    width: 26%;
+    height: 200px;
+    margin: 70px 35px;
+    box-shadow:0 0 20px #fff;
+    transition: all .5s;
+    text-shadow:0 0 20px #fff;
+
+
+}
+
+.card:hover{
+    transform: translateY(-20px);
+    box-shadow:0 10px 30px #fff;
+    text-shadow: 0 10px 10px white;
+   
+
+    
+}
+
+
+
+#missionSection h2{
+    text-align: center;
+    margin: 15px 12px ;
+    font-family: "Russo One";
+    font-size: 21px;
+
+
+}
+
+
+
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.card-img{
+    padding: 0 14px;
+    height: 135px;
+    margin: 5px 9px;
+
+
+}
+.card-img img{
+    height: inherit;
+    transition: all .7s;
+
+}
+
+
+.card-content{
+    padding: 0px 10px;
+    font-size: 20px;
+}
+
+
+#sponsorSection{
+    height: 300px;
+    background:#a8caaa;
+
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+#sponsorSection h3{
+    font-family:'Itim';
+    text-align: center;
+    padding-top: 23px;
+    font-size: 34px;
+    text-shadow: 0 0 10px white;
+}
+#sponsors{
+    display: flex;
+    height: 120px;
+    max-width: 900px;
+    margin: auto;
+
+}
+
+.spone{
+    position: relative;
+}
+
+#spone1{
+    transform:translateX(-410px);
+    transition: all .4s ease-in-out 1s;
+
+    
+}
+#spone2{
+    transform: translateX(-600px);
+    transition: all .4s ease-in-out 0s;
+}
+
+#spone3{
+    transform: translateX(650px);
+    transition: all .4s ease-in-out 0s;
+
+}
+
+#spone4{
+    transform: translateX(410px);
+    transition: all .4s ease-in-out 1s;
+}
+
+
+#sponsorSection:hover #spone1{
+    transform: translateX(0px);
+}
+
+#sponsorSection:hover #spone2{
+    transform: translateX(0px);
+}
+
+#sponsorSection:hover #spone3{
+    transform: translateX(0px);
+}
+
+#sponsorSection:hover #spone4{
+    transform: translateX(0px);
+}
+
+
+.spImage{
+    height:76%;
+    margin: 40px 30px;
+    line-height: 30px;
+}
+
+#footer{
+    background-color: rgb(247, 255, 233);
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+    font-family: "Russo one";
+    transition: all .5s;
+
+
+}
+#footer:hover{
+    color: white;
+    background: black;
+}
+
+
+
+
+
+
+
+
+

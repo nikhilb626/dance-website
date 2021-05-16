@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"open-sans",sans-serif;
+    box-sizing:border-box;
+
+}
+
+.body{
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+   
+}
+
+.body{
+    background:url("../static/about-min.jpg") no-repeat left;
+    transition: all .5s;
+    background-size: cover;
+    background-color: #000428;
+    height: 60vh;
+
+
+}
+
+
+
+
+
+.inner-container{
+    width: 100%;
+    float: right;
+    background: #000428;
+    padding: 150px;
+    height:auto;
+}
+
+
+.inner-container h1{
+    margin-top: -112px;
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+}
+
+.text{
+    padding-top: 29px;
+    font-size: 14px;
+    text-align: justify;
+    margin-bottom: 50px;
+    color: rgb(255, 255, 255);
+
+}
+
+.container1{
+    padding-left: 95px;
+    margin-left:20px;
+    margin: 0px auto;
+    margin-top: 0px;
+    padding-top: 0px;
+    display: inline-block;
+    padding-bottom: 0px;
+    height: 40px;
+    overflow: hidden;
+
+}
+
+.container1 h3{
+    font-size: 25px;
+        
+    display:inline-block;
+    margin-bottom:0px;
+    position: relative;
+    top:-62px;
+    color: white;
+    
+    
+}
+
+.container1 ul{
+    position: relative;
+    top: 6px;
+    display: inline-block;
+    padding-left: 0px;
+    animation: animate 3s linear infinite alternate; 
+}
+
+@keyframes animate{
+    0%{
+        transform:translateY(0px);
+    }
+    40%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform:translateY(-37px);
+    }
+    70%{
+        transform:translateY(-37px);
+    }
+    80%,100%{
+        transform: translateY(-73px);
+    }
+}
+
+.container1 li{
+    color: red;
+    padding-bottom: 5px;
+    font-size: 25px;
+    list-style:none;
+    font-weight: bold;
+}
+
+
+@media (max-width: 712px) and (min-width: 500px){
+    .container1{
+        padding-left: 95px;
+        margin-left:20px;
+        margin: 0px auto;
+        margin-top: 0px;
+        padding-top: 0px;
+        display: inline-block;
+        padding-bottom: 0px;
+        height: 28px;
+        width: 230px;
+        overflow: hidden;
+    
+    }
+    
+    .container1 h3{
+        font-size: 17px;
+        left: -91px;
+            
+        display:inline-block;
+        margin-bottom:0px;
+        position: relative;
+        top:0px;
+        color: white;
+        
+        
+    }
+    
+    .container1 ul{
+        position: relative;
+        top: -18px;
+        left: 25px;
+        display: inline-block;
+        padding-left: 0px;
+        animation: animate 3s linear infinite alternate; 
+    }
+
+    .container1 li{ 
+        font-size: 17px;
+    }
+    @keyframes animate{
+        0%{
+            transform:translateY(0px);
+        }
+        40%{
+            transform:translateY(0px);
+        }
+        50%{
+            transform:translateY(-26px);
+        }
+        70%{
+            transform:translateY(-26px);
+        }
+        80%,100%{
+            transform: translateY(-52px);
+        }
+    }
+    
+
+}
+
+@media (max-width: 500px){
+    .container1{
+        padding-left: 95px;
+        margin-left:20px;
+        margin: 0px auto;
+        margin-top: 0px;
+        padding-top: 0px;
+        display: inline-block;
+        padding-bottom: 0px;
+        height: 28px;
+        width: 230px;
+        overflow: hidden;
+        position: relative;
+        left: -40px;
+    
+    }
+    
+    .container1 h3{
+        font-size: 17px;
+        left: -91px;
+            
+        display:inline-block;
+        margin-bottom:0px;
+        position: relative;
+        top:0px;
+        color: white;
+        
+        
+    }
+    
+    .container1 ul{
+        position: relative;
+        top: -18px;
+        left: 25px;
+        display: inline-block;
+        padding-left: 0px;
+        animation: animate 3s linear infinite alternate; 
+    }
+
+    .container1 li{ 
+        font-size: 17px;
+    }
+    @keyframes animate{
+        0%{
+            transform:translateY(0px);
+        }
+        40%{
+            transform:translateY(0px);
+        }
+        50%{
+            transform:translateY(-26px);
+        }
+        70%{
+            transform:translateY(-26px);
+        }
+        80%,100%{
+            transform: translateY(-52px);
+        }
+    }
+
+    .text{
+        width: 230px;
+        margin-left: -47px;
+    }
+
+    .inner-container h1{
+        font-size: 22px;
+    }
+
+
+}
+
+

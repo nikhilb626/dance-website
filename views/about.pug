@@ -1,0 +1,43 @@
+extends base.pug
+
+block scripts
+    script(src='../static/index.js')
+
+block style 
+    style 
+        include ../static/style.css
+    style 
+        include ../static/about.css
+    style 
+        include ../static/respon1.css
+
+block navbar
+    nav#navbar
+        ul 
+            div#logo
+                img(src=" ../static/vectorr/1.png")
+                |NDA
+            li #[a(href='/') HOME]
+            li #[a(href='/about') ABOUT]
+            //- li #[a(href='/') SERVICES]
+            li #[a(href='/class') CLASS INFO]
+            li #[a(href='/contact') CONTACT US]
+
+block content
+    div.body
+        
+    div.inner-container
+        h1 About us 
+        p.text Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero    quidem tenetur, repellat sunt cum sint quae ea animi fugiat iusto veritatis perspiciatis saepe culpa excepturi labore rerum ut vitae dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem vel dicta soluta odio veniam optio, iste possimus enim qui. Pariatur.
+        div.container1
+                    
+            h3 we teach you 
+            ul 
+                li &nbsp contemprary 
+                li  &nbsp hip-hop
+                li  &nbsp classical
+    
+
+block foot
+    footer#footer 
+        marquee copyright © 2021 NikhilDanceAcademy.com  all rights|reserved

@@ -1,0 +1,89 @@
+extends base.pug
+
+block scripts
+    script(src='../static/index.js')
+    script(src='https://kit.fontawesome.com/7d994d7d71.js', crossorigin='anonymous')
+
+
+block style 
+    style 
+        include ../static/style.css
+    style
+        include ../static/class.css
+    style
+        include ../static/all.min.css
+    style 
+        include ../static/respon1.css
+
+
+
+block navbar
+    nav#navbar
+        ul 
+            div#logo
+                img(src=" ../static/vectorr/1.png")
+                |NDA
+            li #[a(href='/') HOME]
+            li #[a(href='/about') ABOUT]
+            //- li #[a(href='/') SERVICES]
+            li #[a(href='/class') CLASS INFO]
+            li #[a(href='/contact') CONTACT US]
+
+
+block content
+    div.container
+        div.inner-container1
+            table
+                tr
+                    th S.N.
+                    th DANCE
+                    th DAYS 
+                    th INSTRUCTOR 
+                    th TIMING
+                tr
+                    td 001
+                    td belly
+                    td mon,wed
+                    td Mr sharma
+                    td 4-5pm
+                tr
+                    td 002
+                    td classical
+                    td tues,sat 
+                    td Mr patel 
+                    td 3-5pm
+                tr
+                    td 003
+                    td hip-hop
+                    td thu,fri
+                    td miss rai 
+                    td 3-4pm
+
+        div.inner-container2 
+            div.item
+                i.fa.fa-map-marker
+                h3 Address,city,country
+            div.item
+                i.fa.fa-envelope
+                h3 contact@gmail.com
+            div.item
+                i.fas.fa-phone
+                h3 +000 00 00 000
+            div.item
+                i.fa.fa-clock
+                h3 Mon-fri 8:00 AM to 5:00 PM
+
+            
+
+
+            
+
+
+
+
+
+
+block foot
+    footer#footer 
+        marquee copyright © 2021 NikhilDanceAcademy.com  all rights|reserved
+

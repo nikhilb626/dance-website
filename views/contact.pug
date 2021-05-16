@@ -1,0 +1,48 @@
+extends base.pug
+
+block scripts
+    script(src='../static/index.js')
+
+block style 
+    style 
+        include ../static/style.css
+    style
+        include ../static/stylecontact.css
+    style 
+        include ../static/respon1.css
+
+
+block navbar
+    nav#navbar
+        ul
+            div#logo
+                img(src=" ../static/vectorr/1.png")
+                |NDA
+            li #[a(href='/') HOME]
+            li #[a(href='/about') ABOUT]
+            //- li #[a(href='/') SERVICES]
+            li #[a(href='/class') CLASS INFO]
+            li #[a(href='/contact') CONTACT US]
+
+
+block content
+    div.container 
+        h1 REGISTER NOW
+        form(action="/contact",method="post" class="myform" autocomplete="off")
+            input(type="text",class="myinput",name="name",placeholder="Enter your name")
+           
+            input(type="text",class="myinput",name="email",placeholder="Enter your Email id/phone no.")
+            input(type="text",class="myinput",name="feedback",placeholder="Enter your feedback")
+          
+            button(class="btn")
+                |submit
+    
+
+ 
+
+
+
+block foot
+    footer#footer 
+        marquee copyright © 2021 NikhilDanceAcademy.com  all rights|reserved
+
